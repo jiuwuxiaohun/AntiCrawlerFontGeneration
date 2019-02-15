@@ -84,14 +84,11 @@ if __name__ == '__main__':
 
         macs = len(relationdic) + 50 * ttfnumber  # 可能会有重复 多加点
         tem_list = []
-        for x in range(0, int(macs)):
+        for x in range(0, int(macs)):  # 循环
             tem_list.append(random_unicode(unicodelengths))
         tem_list = list(set(tem_list))  # 去重
-
         tempfontsxmlpa = TTFontsXML(ttf_patn)  # 转换到临时XML地址。。
-
         okjson = []
-
         for f in range(0, ttfnumber):
             relationdictemp = relationdic.copy()
             for key in relationdictemp.keys():
