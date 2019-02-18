@@ -4,6 +4,7 @@
 # -*-*-
 import json
 import random
+import uuid
 
 from fontTools import ttx
 from fontTools.ttLib import TTFont
@@ -38,11 +39,8 @@ def TTFonts(filenames):  # 转换XML转换ttf
 
 
 def Editfile(fontsjson, files):
-    random_list = ["a", "v", "x", "s", "q", "w", "e", "r", "t", "y", "u", "i", "o", "z", "x", "c", "v", "b", "n", "m",
-                   "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ]
-    shuma = ((str(random.sample(random_list, int(25))).replace('\'', '')).replace(',', '')). \
-        replace(' ', '').replace('[', '').replace(']', '')
-    filenametemp = "temp/" + shuma + ".xml"
+    shuma = str(uuid.uuid4()).replace("-", "")
+    filenametemp = "temp/" + str(shuma) + ".xml"
 
     try:
         with open(files, 'r+') as fileOpen:
