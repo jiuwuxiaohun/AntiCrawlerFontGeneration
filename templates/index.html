@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        @font-face {
+            font-family: 'icomoon';
+            src: url('/static/font/{{fonturl}}') format('truetype');
+        }
+
+        .icomoon {
+            font-family: icomoon;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+<body>
+<h1>字体反爬虫测试</h1>
+<a class="fonta" href="/static/font/{{fonturl}}">字体连接</a>
+
+<p class="icomoon">
+    {% for user in data %}
+    {{ user|safe}}
+    {% endfor %}
+</p>
+
+
+</body>
+</html>
