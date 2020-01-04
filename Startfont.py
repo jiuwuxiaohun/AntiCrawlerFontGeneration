@@ -77,6 +77,18 @@ if __name__ == '__main__':
                    "u": "23e1c", "v": "ea6ac",
                    "w": "b87de", "x": "e5dac", "y": "2ccea",
                    "z": "3ada9"}  # 必须当前混淆ttf填入关系 否则不知道谁是谁了。。。生成的json 文件也是错误的。。
+    relationdic = {"0": "eeaf", "1": "eeaf", "2": "eeaf", "3": "eeaf", "4": "edfd", "5": "c57f", "6": "e261",
+                   "7": "f4d2", "8": "bad5", "9": "d4c2",
+                   "A": "bfec5", "B": "fc736", "C": "e6d21", "D": "be4a9", "E": "c0e8f", "F": "d3c26", "G": "b18a0",
+                   "H": "acb06", "I": "fd33e", "J": "fd36e", "K": "d417c", "L": "ad31e", "M": "ec95a", "N": "b39ce",
+                   "O": "d508a", "P": "a961d", "Q": "a76b0", "R": "b7f12", "S": "b0426", "T": "d5941", "U": "ede47",
+                   "V": "fc5a6", "W": "ed947", "X": "fd781", "Y": "b761a",
+                   "Z": "af370", "a": "fde89", "b": "ecb21", "c": "c123c", "d": "b4c2c", "e": "cbbc7", "f": "c10cb",
+                   "g": "cb78b", "h": "fdac7", "i": "76fe", "j": "d0def", "k": "ed6de", "l": "eaa1a", "m": "de1e9",
+                   "n": "9eaa5", "o": "123e5", "p": "e12e2", "q": "e5efd", "r": "e6ea9", "s": "e1e8a", "t": "b8eac",
+                   "u": "23e1c", "v": "ea6ac",
+                   "w": "b87de", "x": "e5dac", "y": "2ccea",
+                   "z": "3ada9"}  # 必须当前混淆ttf填入关系 否则不知道谁是谁了。。。生成的json 文件也是错误的。。
     try:
 
         macs = len(relationdic) + 50 * ttfnumber  # 可能会有重复 多加点
