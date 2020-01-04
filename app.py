@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 def random_json():
     count = len(open('json.json', 'rU').readlines())  # 获取行数
+    print("json行数：",count)
     hellonum = random.randrange(1, count, 1)  # 生成随机行数
     return linecache.getline('json.json', hellonum)  # 随机读取某行
 
@@ -23,12 +24,13 @@ def index():
     dictjsons = json.loads(jsons)
 
     dict_values = dictjsons['data'].values()
-    random.shuffle(dict_values)
+    # random.shuffle(dict_values)
     context = {
         'fonturl': dictjsons['url'],
         'data': dict_values,
 
     }
+    print(dictjsons['url'])
     return render_template('index.html', **context)
 
 

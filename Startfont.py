@@ -53,8 +53,8 @@ def Editfile(fontsjson, files):
             f.write(data)
             f.close()
         return shuma + ".ttf", filenametemp
-    except Exception, ex:
-        print ex
+    except Exception as ex:
+        print(ex)
         filenametemp = "error"
         filenames = ""
         return filenametemp, filenames
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     random_list = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']  # 后排随机字符
     random_str = 'e'  # 参照 ['e', 'a', 'f', 'c', 'b'] 随机选择一个加入
     ttf_patn = "FontTest.ttf"  # 请输入ttf文件绝对路径:
-    ttfnumber = 10  # 输入生成多少个文件:
+    ttfnumber = 3  # 输入生成多少个文件:
     relationdic = {"0": "eeaf", "1": "efab", "2": "eba3", "3": "eba5", "4": "edfd", "5": "c57f", "6": "e261",
                    "7": "f4d2", "8": "bad5", "9": "d4c2",
                    "A": "bfec5", "B": "fc736", "C": "e6d21", "D": "be4a9", "E": "c0e8f", "F": "d3c26", "G": "b18a0",
@@ -101,5 +101,5 @@ if __name__ == '__main__':
                 jsonSeve = {"url": filenames, "data": relationdictemp}
                 with open('json.json', 'a+') as json_file:
                     json_file.write(json.dumps(jsonSeve, ensure_ascii=False) + "\n")
-    except Exception, ex:
-        print ex
+    except Exception as ex:
+        print(ex)

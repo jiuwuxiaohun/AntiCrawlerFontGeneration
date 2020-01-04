@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.38">
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.2">
 
   <GlyphOrder>
     <!-- The 'id' attribute is only for humans; it is ignored when parsed. -->
@@ -288,7 +288,7 @@
       <map code="0xf4d2" name="uniF4D2"/><!-- ???? -->
       <map code="0x123e5" name="u123E5"/><!-- ???? -->
       <map code="0x23e1c" name="u23E1C"/><!-- CJK UNIFIED IDEOGRAPH-23E1C -->
-      <map code="0x2ccea" name="u2CCEA"/><!-- ???? -->
+      <map code="0x2ccea" name="u2CCEA"/><!-- CJK UNIFIED IDEOGRAPH-2CCEA -->
       <map code="0x3ada9" name="u3ADA9"/><!-- ???? -->
       <map code="0x9eaa5" name="u9EAA5"/><!-- ???? -->
       <map code="0xa76b0" name="uA76B0"/><!-- ???? -->
@@ -376,7 +376,7 @@
       <map code="0xf4d2" name="uniF4D2"/><!-- ???? -->
       <map code="0x123e5" name="u123E5"/><!-- ???? -->
       <map code="0x23e1c" name="u23E1C"/><!-- CJK UNIFIED IDEOGRAPH-23E1C -->
-      <map code="0x2ccea" name="u2CCEA"/><!-- ???? -->
+      <map code="0x2ccea" name="u2CCEA"/><!-- CJK UNIFIED IDEOGRAPH-2CCEA -->
       <map code="0x3ada9" name="u3ADA9"/><!-- ???? -->
       <map code="0x9eaa5" name="u9EAA5"/><!-- ???? -->
       <map code="0xa76b0" name="uA76B0"/><!-- ???? -->
